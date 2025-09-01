@@ -4,7 +4,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 export default function Navbar({ isOpen, setIsOpen }) {
   return (
    <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between  px-4 lg:px-6 py-4 bg-black text-[#f4d9b0] shadow-md">
-      <h1 className="text-lg md:text-xl font-bold"><span className="font-bold">SHR</span><span class="opacity-70">.dev</span>
+      <h1 className="text-lg md:text-xl font-bold"><span className="font-bold">SHR</span><span className="opacity-70">.dev</span>
 </h1>
 
       {/* Desktop Menu */}
@@ -128,6 +128,17 @@ export default function Navbar({ isOpen, setIsOpen }) {
                className="text-[#f4d9b0] font-bold cursor-pointer px-3 py-1 hover:text-black hover:bg-[#f4d9b0] rounded-lg"
             >
               About
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="skills"
+              smooth={true}
+              duration={500}
+              onClick={() => setIsOpen(false)}
+               className="text-[#f4d9b0] font-bold cursor-pointer px-3 py-1 hover:text-black hover:bg-[#f4d9b0] rounded-lg"
+            >
+              Skills
             </Link>
           </li>
           <li>

@@ -4,9 +4,12 @@ export default function About () {
     return(
 <section id="about">
         <div className=" bg-[#f4d9b0] text-[#333] flex flex-col items-center p-10 px-6 py-10 md:py-[3rem]">
-          <h2 className="relative group text-2xl md:text-4xl font-bold mb-10 border-dashed border-[#333] pb-5 w-max mx-auto">About Me<span className="absolute bottom-0 left-0 w-full h-[4px] border-b-4 border-dashed border-[#333] 
-      bg-[linear-gradient(90deg,#333_50%,transparent_50%)] bg-[length:20px_4px] 
-      opacity-0 group-hover:opacity-100 group-hover:animate-dash"></span></h2>
+          <h2
+  className="relative font-bold text-2xl md:text-4xl mb-10 pb-2 w-max mx-auto 
+  after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[4px] after:w-full 
+  after:bg-[linear-gradient(to_right,#333_50%,transparent_50%)] after:bg-[length:20px_4px] 
+  after:[animation:dash_1s_linear_infinite]"
+>About Me</h2>
       
           <p className="max-w-2xl text-sm md:text-lg leading-6 text-gray-900">
             Hi, I'm Shreyansh 👋. I'm a full-stack web developer passionate

@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between">
         
         {/* Left - Copyright */}
-        <p className="text-sm mb-4 sm:mb-0">
+        <p className="text-xs md:text-sm mb-4 sm:mb-0">
           © Copyright {new Date().getFullYear()} Shreyansh.dev. All Rights Reserved.
         </p>
 
