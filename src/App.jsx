@@ -10,15 +10,15 @@ import { Download } from "lucide-react";
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  return (
-    <div className="min-h-screen bg-[#f4d9b0] text-[#333] font-pixel px-6 py-4 overflow-x-hidden">
+  return (<>
+    <div className="min-h-screen w-full bg-[#f4d9b0] text-[#333] font-pixel px-4 md:px-6 py-4 overflow-x-hidden">
       {/* Header */}
       <Navbar isOpen={menuOpen} setIsOpen={setMenuOpen} />
 
       {/* Hero section */}
       <section
         id="home"
-        className="mb-16 pt-40 flex flex-col md:flex-row items-center md:items-start gap-10"
+        className="mb-16 pt-20 md:pt-40 flex flex-col md:flex-row items-center md:items-start gap-10"
       >
         {/* Hero Image */}
         <div className="flex-shrink-0">
@@ -32,28 +32,27 @@ export default function App() {
         </div>
 
         {/* Hero Text */}
-        <div className="flex-1">
+        <div className="flex-1 md:mt-1">
           <h1 className="bg-[#333] text-[#f4d9b0] text-3xl md:text-4xl p-2 inline-block mb-6">
             Hi there
           </h1>
-          <p className="leading-9 mb-4">
-            My name is <b className="text-2xl">Shreyansh Sahu</b>. “I’m a
-            front-end React developer. I create responsive websites, portfolio
-            sites, and web apps. I have a passion for all things technology and
-            design.
+          <p className="leading-relaxed md:leading-8 mb-4 text-lg md:text-2xl">
+            My name is <b className="text-2xl md:text-3xl">Shreyansh Sahu</b>. “I’m a
+            Front-end React developer. I create responsive websites, portfolio
+            sites, and web apps. As a curious learner with a passion for problem-solving, transitioned into web development to build interactive and user-friendly applications. Currently on the track of a Full-stack web developer at Avish Educom. 
           </p>
-          <p className="leading-8 mb-4">
+          <p className="leading-8 mb-4 text-lg md:text-2xl">
             In addition to my love of tech and design, I’m also interested in
             education, history, economics and politics.
           </p>
-          <p className="leading-7">
+          <p className="leading-8 text-lg md:text-2xl">
             Below are details of some of the projects I’ve developed over my
             years of coding experience.
           </p>
           <a
             href="/cv.pdf"
             download="Shreyansh_Resume.pdf"
-            className="w-auto inline-flex mt-8  items-center gap-2 bg-[#333] text-[#f4d9b0] px-6 py-3 rounded-2xl shadow-lg hover:bg-[#555] transition-all"
+            className="w-auto inline-flex mt-8  items-center gap-2 bg-[#333] text-[#f4d9b0] px-6 py-3 rounded-2xl shadow-lg hover:bg-[#232222f7] transition-all"
           >
             <Download size={18} /> Download CV
           </a>
@@ -68,7 +67,8 @@ export default function App() {
 
       <Contact />
 
-      <Footer />
     </div>
+      <Footer />
+    </>
   );
 }

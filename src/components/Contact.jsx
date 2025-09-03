@@ -3,16 +3,16 @@ import React from "react";
 const Contact = () => {
   return (
     <section id="contact">
-      <div className="bg-[#f4d9b0] text-[#333] flex flex-col items-center p-10 px-6 py-16 md:py-[8rem]">
+      <div className="bg-[#f4d9b0] text-[#333] flex flex-col items-center md:p-10 md:px-6 py-16 md:py-[8rem]">
        <h2
-  className="relative font-bold text-2xl md:text-4xl mb-10 pb-2 w-max mx-auto 
+  className="relative font-bold text-3xl md:text-5xl mb-10 pb-2 w-max mx-auto 
   after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[4px] after:w-full 
   after:bg-[linear-gradient(to_right,#333_50%,transparent_50%)] after:bg-[length:20px_4px] 
   after:[animation:dash_1s_linear_infinite]"
 >
           Contact
         </h2>
-        <form className="w-full max-w-md bg-[#333] p-6 rounded-lg shadow-lg text-[#f4d9b0] text-sm md:text-[1rem]">
+        <form className="w-full md:max-w-lg bg-[#333] p-6 rounded-lg shadow-lg text-[#f4d9b0] text-sm md:text-[1rem]">
           <div className="mb-4">
             <label className="block mb-2">Name</label>
             <input

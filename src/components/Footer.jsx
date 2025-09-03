@@ -2,15 +2,13 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-6 mt-20">
-      <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between">
-        
-        {/* Left - Copyright */}
+    <footer className="bg-black w-full text-white py-6 ">
+      <div className="w-full px-6 flex flex-col sm:flex-row items-center justify-between">
         <p className="text-xs md:text-sm mb-4 sm:mb-0">
-          © Copyright {new Date().getFullYear()} Shreyansh.dev. All Rights Reserved.
+          © Copyright {new Date().getFullYear()} Shreyansh.dev. All Rights
+          Reserved.
         </p>
 
-        {/* Right - Social Icons */}
         <div className="flex space-x-6 text-xl">
           <a
             href="https://github.com/SHR8989"
