@@ -12,11 +12,15 @@ const Contact = () => {
 >
           Contact
         </h2>
-        <form className="w-full md:max-w-lg bg-[#333] p-6 rounded-lg shadow-lg text-[#f4d9b0] text-sm md:text-[1rem]">
+        <form 
+        action="https://formspree.io/f/mgvlplyk"
+        method="POST"
+        className="w-full md:max-w-lg bg-[#333] p-6 rounded-lg shadow-lg text-[#f4d9b0] text-sm md:text-[1rem]">
           <div className="mb-4">
             <label className="block mb-2">Name</label>
             <input
               type="text"
+              name="name"
               className="w-full p-2 rounded text-[#333] text-xs md:text-[1rem]"
               placeholder="Your name"
             />
@@ -25,6 +29,7 @@ const Contact = () => {
             <label className="block mb-2">Email</label>
             <input
               type="email"
+              name="email"
               className="w-full p-2 rounded text-[#333] text-xs md:text-[1rem]"
               placeholder="Your email"
             />
@@ -32,6 +37,7 @@ const Contact = () => {
           <div className="mb-4">
             <label className="block mb-2">Message</label>
             <textarea
+            name="message"
               className="w-full p-2 rounded text-[#333] text-xs md:text-[1rem]"
               rows="4"
               placeholder="Your message"
